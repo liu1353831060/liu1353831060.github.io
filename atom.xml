@@ -6,7 +6,7 @@
   <link href="https://liu1353831060.github.io/atom.xml" rel="self"/>
   
   <link href="https://liu1353831060.github.io/"/>
-  <updated>2020-12-25T08:10:14.848Z</updated>
+  <updated>2020-12-25T08:11:09.933Z</updated>
   <id>https://liu1353831060.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://liu1353831060.github.io/2020/12/25/%E5%8D%9A%E5%AE%A2%E4%BF%AE%E6%94%B9%E8%AE%B0%E5%BD%95/"/>
     <id>https://liu1353831060.github.io/2020/12/25/%E5%8D%9A%E5%AE%A2%E4%BF%AE%E6%94%B9%E8%AE%B0%E5%BD%95/</id>
     <published>2020-12-25T07:17:40.000Z</published>
-    <updated>2020-12-25T08:10:14.848Z</updated>
+    <updated>2020-12-25T08:11:09.933Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="解决hexo不显示latex数学公式问题"><a href="#解决hexo不显示latex数学公式问题" class="headerlink" title="解决hexo不显示latex数学公式问题"></a>解决hexo不显示latex数学公式问题</h3><p><a href="https://blog.csdn.net/weixin_44489823/article/details/105028860">网络方法</a></p>]]></content>
     
@@ -45,9 +45,9 @@
     <link href="https://liu1353831060.github.io/2020/12/25/%E5%BC%A0%E5%AE%8736%E8%AE%B2/"/>
     <id>https://liu1353831060.github.io/2020/12/25/%E5%BC%A0%E5%AE%8736%E8%AE%B2/</id>
     <published>2020-12-25T07:17:40.000Z</published>
-    <updated>2020-12-25T07:51:00.741Z</updated>
+    <updated>2020-12-25T08:20:10.557Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="第二讲-极限和连续"><a href="#第二讲-极限和连续" class="headerlink" title="第二讲:极限和连续"></a>第二讲:极限和连续</h3><p>例2 设 $\displaystyle \lim_{x \to \infty}(a_n + b_n)=1 $,$\displaystyle \lim_{n \to \infty}(a_n-b_n)=3$,证明{$a_n$}和{$b_n$}的极限存在,并求出它们的极限值.</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="第二讲-极限和连续"><a href="#第二讲-极限和连续" class="headerlink" title="第二讲:极限和连续"></a>第二讲:极限和连续</h3><p>[例2]设$\displaystyle \lim_{x \to \infty}(a_n + b_n)=1 $,$\displaystyle \lim_{n \to \infty}(a_n-b_n)=3$,证明{$a_n$}和{$b_n$}的极限存在,并求出它们的极限值.</p>]]></content>
     
     
       
@@ -71,7 +71,7 @@
     <published>2020-12-14T06:42:18.000Z</published>
     <updated>2020-12-25T07:12:38.138Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="图像插入"><a href="#图像插入" class="headerlink" title="图像插入"></a>图像插入</h2><p><img src="/imge/timg.jpg" alt="RUNOOB 图标"></p><a id="more"></a><h2 id="文字处理"><a href="#文字处理" class="headerlink" title="文字处理"></a>文字处理</h2><h2 id="音频插入"><a href="#音频插入" class="headerlink" title="音频插入"></a>音频插入</h2>    <div id="aplayer-BIETqABR" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="571184509" data-server="xiami" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><h2 id="视频插入"><a href="#视频插入" class="headerlink" title="视频插入"></a>视频插入</h2><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"autoplay":true,"hotkey":true,"preload":"metadata","video":{"url":"http://www.nenu.edu.cn/_upload/article/videos/03/5f/7c999eed42e3aadc413d7f851f0e/0f50b3eb-9285-41d2-ac4d-6cc363651aad_B.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script> ]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="图像插入"><a href="#图像插入" class="headerlink" title="图像插入"></a>图像插入</h2><p><img src="/imge/timg.jpg" alt="RUNOOB 图标"></p><a id="more"></a><h2 id="文字处理"><a href="#文字处理" class="headerlink" title="文字处理"></a>文字处理</h2><h2 id="音频插入"><a href="#音频插入" class="headerlink" title="音频插入"></a>音频插入</h2>    <div id="aplayer-PCMhfHwr" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="571184509" data-server="xiami" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><h2 id="视频插入"><a href="#视频插入" class="headerlink" title="视频插入"></a>视频插入</h2><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"autoplay":true,"hotkey":true,"preload":"metadata","video":{"url":"http://www.nenu.edu.cn/_upload/article/videos/03/5f/7c999eed42e3aadc413d7f851f0e/0f50b3eb-9285-41d2-ac4d-6cc363651aad_B.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script> ]]></content>
     
     
     <summary type="html">&lt;h2 id=&quot;图像插入&quot;&gt;&lt;a href=&quot;#图像插入&quot; class=&quot;headerlink&quot; title=&quot;图像插入&quot;&gt;&lt;/a&gt;图像插入&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/imge/timg.jpg&quot; alt=&quot;RUNOOB 图标&quot;&gt;&lt;/p&gt;</summary>
