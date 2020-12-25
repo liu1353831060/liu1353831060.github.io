@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>HEXO博客搭建教程</title>
-    <url>/2020/12/14/HEXO%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="图像插入"><a href="#图像插入" class="headerlink" title="图像插入"></a>图像插入</h2><p><img src="/imge/timg.jpg" alt="RUNOOB 图标"></p>
-<a id="more"></a>
-<h2 id="文字处理"><a href="#文字处理" class="headerlink" title="文字处理"></a>文字处理</h2><h2 id="音频插入"><a href="#音频插入" class="headerlink" title="音频插入"></a>音频插入</h2>
-    <div id="aplayer-PCMhfHwr" class="aplayer aplayer-tag-marker meting-tag-marker"
-         data-id="571184509" data-server="xiami" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
-    ></div>
-<h2 id="视频插入"><a href="#视频插入" class="headerlink" title="视频插入"></a>视频插入</h2><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"autoplay":true,"hotkey":true,"preload":"metadata","video":{"url":"http://www.nenu.edu.cn/_upload/article/videos/03/5f/7c999eed42e3aadc413d7f851f0e/0f50b3eb-9285-41d2-ac4d-6cc363651aad_B.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script> ]]></content>
-      <categories>
-        <category>练习</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>博客修改日志</title>
     <url>/2020/12/25/%E5%8D%9A%E5%AE%A2%E4%BF%AE%E6%94%B9%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="解决hexo不显示latex数学公式问题"><a href="#解决hexo不显示latex数学公式问题" class="headerlink" title="解决hexo不显示latex数学公式问题"></a>解决hexo不显示latex数学公式问题</h3><p><a href="https://blog.csdn.net/weixin_44489823/article/details/105028860">网络方法</a></p>
@@ -31,9 +13,35 @@
       </tags>
   </entry>
   <entry>
+    <title>HEXO博客搭建教程</title>
+    <url>/2020/12/14/HEXO%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="图像插入"><a href="#图像插入" class="headerlink" title="图像插入"></a>图像插入</h2><p><img src="/imge/timg.jpg" alt="RUNOOB 图标"></p>
+<a id="more"></a>
+<h2 id="文字处理"><a href="#文字处理" class="headerlink" title="文字处理"></a>文字处理</h2><h2 id="音频插入"><a href="#音频插入" class="headerlink" title="音频插入"></a>音频插入</h2>
+    <div id="aplayer-oQlBMUjz" class="aplayer aplayer-tag-marker meting-tag-marker"
+         data-id="571184509" data-server="xiami" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
+    ></div>
+<h2 id="视频插入"><a href="#视频插入" class="headerlink" title="视频插入"></a>视频插入</h2><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"autoplay":true,"hotkey":true,"preload":"metadata","video":{"url":"http://www.nenu.edu.cn/_upload/article/videos/03/5f/7c999eed42e3aadc413d7f851f0e/0f50b3eb-9285-41d2-ac4d-6cc363651aad_B.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script> ]]></content>
+      <categories>
+        <category>练习</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>张宇36讲</title>
     <url>/2020/12/25/%E5%BC%A0%E5%AE%8736%E8%AE%B2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="第二讲-极限和连续"><a href="#第二讲-极限和连续" class="headerlink" title="第二讲:极限和连续"></a>第二讲:极限和连续</h3><p>[例2]设$\displaystyle \lim_{x \to \infty}(a_n + b_n)=1 $,$\displaystyle \lim_{n \to \infty}(a_n-b_n)=3$,证明{$a_n$}和{$b_n$}的极限存在,并求出它们的极限值.</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="第二讲-极限和连续"><a href="#第二讲-极限和连续" class="headerlink" title="第二讲:极限和连续"></a>第二讲:极限和连续</h3><h4 id="1、数列极限的定义"><a href="#1、数列极限的定义" class="headerlink" title="1、数列极限的定义"></a>1、数列极限的定义</h4><p>对于$\forall \epsilon &gt;0$,总$\exists N(n\epsilon N_+)$,使得当$n&gt;N$时，$|x_n-a|&lt;\epsilon$恒成立，则称数a时数列{$x_n$}的极限，或者称数列{$x_n$}收敛于a，记为</p>
+<script type="math/tex; mode=display">
+\displaystyle \lim_{n \to \infty}x_n=a</script><p>如果不存在这样的数a，就说明数列是发散的。</p>
+<h4 id="2、数列极限收敛的充要条件"><a href="#2、数列极限收敛的充要条件" class="headerlink" title="2、数列极限收敛的充要条件"></a>2、数列极限收敛的充要条件</h4><p>定义    从数列{$a_n$}:$a_1,a_2,a_3,…$中选取无穷多项，并按原来的先后顺序组成新的数列，称新数列为原数列的子列，记为</p>
+<script type="math/tex; mode=display">
+{a_n}:a_{n_1},a_{n_2},...,a_{n_k},...</script><p>其中下标$n_1,n_2,…,n_k,…$为正整数，且满足$n_1&lt;n_2&lt;…&lt;n_k&lt;…$.</p>
+<p>若{$a_{n_k}$}是{$a_n$}的子列，则$a_{n_k}$是新数列的第k项，是原数列的第$n_k$项，因此，有$n_k \ge k$()</p>
+<p>[例2]设$\displaystyle \lim_{x \to \infty}(a_n + b_n)=1 $,$\displaystyle \lim_{n \to \infty}(a_n-b_n)=3$,证明{$a_n$}和{$b_n$}的极限存在,并求出它们的极限值.</p>
+<p>$a_{n_k}$</p>
 ]]></content>
       <categories>
         <category>考研数学&lt;一&gt;</category>
