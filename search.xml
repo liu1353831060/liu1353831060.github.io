@@ -5,16 +5,29 @@
     <url>/2020/12/14/HEXO%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="图像插入"><a href="#图像插入" class="headerlink" title="图像插入"></a>图像插入</h2><p><img src="/imge/timg.jpg" alt="RUNOOB 图标"></p>
 <a id="more"></a>
-
 <h2 id="文字处理"><a href="#文字处理" class="headerlink" title="文字处理"></a>文字处理</h2><h2 id="音频插入"><a href="#音频插入" class="headerlink" title="音频插入"></a>音频插入</h2>
-    <div id="aplayer-SJpSyssL" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-XUQYpKXe" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="571184509" data-server="xiami" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
-
 <h2 id="视频插入"><a href="#视频插入" class="headerlink" title="视频插入"></a>视频插入</h2><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"autoplay":true,"hotkey":true,"preload":"metadata","video":{"url":"http://www.nenu.edu.cn/_upload/article/videos/03/5f/7c999eed42e3aadc413d7f851f0e/0f50b3eb-9285-41d2-ac4d-6cc363651aad_B.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script> ]]></content>
+      <categories>
+        <category>练习</category>
+      </categories>
       <tags>
         <tag>hexo</tag>
         <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>张宇36讲</title>
+    <url>/2020/12/25/%E5%BC%A0%E5%AE%8736%E8%AE%B2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="第二讲-极限和连续"><a href="#第二讲-极限和连续" class="headerlink" title="第二讲:极限和连续"></a>第二讲:极限和连续</h3><p>例2 设 $\displaystyle \lim_{x \to \infty}(a_n + b_n)=1 $,$\displaystyle \lim_{n \to \infty}(a_n-b_n)=3$,证明{$a_n$}和{$b_n$}的极限存在,并求出它们的极限值.</p>
+]]></content>
+      <categories>
+        <category>考研数学&lt;一&gt;</category>
+      </categories>
+      <tags>
+        <tag>考研数学&lt;一&gt;</tag>
       </tags>
   </entry>
 </search>
