@@ -6,7 +6,7 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="图像插入"><a href="#图像插入" class="headerlink" title="图像插入"></a>图像插入</h2><p><img src="/imge/timg.jpg" alt="RUNOOB 图标"></p>
 <a id="more"></a>
 <h2 id="文字处理"><a href="#文字处理" class="headerlink" title="文字处理"></a>文字处理</h2><h2 id="音频插入"><a href="#音频插入" class="headerlink" title="音频插入"></a>音频插入</h2>
-    <div id="aplayer-icdMQUhK" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-cxfaYIVz" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="571184509" data-server="xiami" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
 <h2 id="视频插入"><a href="#视频插入" class="headerlink" title="视频插入"></a>视频插入</h2><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"autoplay":true,"hotkey":true,"preload":"metadata","video":{"url":"http://www.nenu.edu.cn/_upload/article/videos/03/5f/7c999eed42e3aadc413d7f851f0e/0f50b3eb-9285-41d2-ac4d-6cc363651aad_B.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script> ]]></content>
@@ -22,8 +22,7 @@
     <title>博客修改日志</title>
     <url>/2020/12/25/%E5%8D%9A%E5%AE%A2%E4%BF%AE%E6%94%B9%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="解决hexo不显示latex数学公式问题"><a href="#解决hexo不显示latex数学公式问题" class="headerlink" title="解决hexo不显示latex数学公式问题"></a>解决hexo不显示latex数学公式问题</h3><p><a href="https://blog.csdn.net/weixin_44489823/article/details/105028860">网络方法</a></p>
-<p> <a href="..\pdf\20191210103558276.pdf">20191210103558276.pdf</a> </p>
-]]></content>
+<div class="pdfobject-container" data-target="https://www.liuwenhao.club/pdf/20191210103558276.pdf" data-height="500px"></div>]]></content>
       <categories>
         <category>修改日志</category>
       </categories>
@@ -49,6 +48,45 @@
       </categories>
       <tags>
         <tag>考研数学&lt;一&gt;</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>paper</title>
+    <url>/2021/01/08/u-boot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="u－boot-移植步骤详解"><a href="#u－boot-移植步骤详解" class="headerlink" title="u－boot  移植步骤详解"></a>u－boot  移植步骤详解</h2><h3 id="1-U-Boot简介"><a href="#1-U-Boot简介" class="headerlink" title="1 U-Boot简介"></a>1 U-Boot简介</h3><p>U-Boot，全称Universal Boot Loader，是遵循GPL条款的开放源码项目。从FADSROM、8xxROM、PPCBOOT逐步发展演化而来。其源码目录、编译形式与Linux内核很相似，事实上，不少U-Boot源码就是相应的Linux内核源程序的简化，尤其是一些设备的驱动程序，这从U-Boot源码的注释中能体现这一点。但是U-Boot不仅仅支持嵌入式Linux系统的引导，当前，它还支持NetBSD, VxWorks, QNX, RTEMS, ARTOS, LynxOS嵌入式操作系统。其目前要支持的目标操作系统是OpenBSD, NetBSD, FreeBSD,4.4BSD, Linux, SVR4, Esix, Solaris, Irix, SCO, Dell, NCR, VxWorks, LynxOS, pSOS, QNX, RTEMS, ARTOS。这是U-Boot中Universal的一层含义，另外一层含义则是U-Boot除了支持PowerPC系列的处理器外，还能支持MIPS、 x86、ARM、NIOS、XScale等诸多常用系列的处理器。这两个特点正是U-Boot项目的开发目标，即支持尽可能多的嵌入式处理器和嵌入式操作系统。就目前来看，U-Boot对PowerPC系列处理器支持最为丰富，对Linux的支持最完善。其它系列的处理器和操作系统基本是在2002年11 月PPCBOOT改名为U-Boot后逐步扩充的。从PPCBOOT向U-Boot的顺利过渡，很大程度上归功于U-Boot的维护人德国DENX软件工程中心Wolfgang Denk[以下简称W.D]本人精湛专业水平和持着不懈的努力。当前，U-Boot项目正在他的领军之下，众多有志于开放源码BOOT LOADER移植工作的嵌入式开发人员正如火如荼地将各个不同系列嵌入式处理器的移植工作不断展开和深入，以支持更多的嵌入式操作系统的装载与引导。<br> 选择U-Boot的理由： </p>
+<ol>
+<li>开放源码；</li>
+<li>支持多种嵌入式操作系统内核</li>
+<li>支持多个处理器系列</li>
+<li>较高的可靠性和稳定性</li>
+<li>高度灵活的功能设置，适合U-Boot调试、操作系统不同的引导要求、产品发布等；</li>
+<li>丰富的设备驱动源码，如串口、以太网SDRAM、FLASH、LCD、NVRAM、EEPROM、RTC、键盘等；</li>
+</ol>
+<h3 id="2-U-Boot主要目录结构"><a href="#2-U-Boot主要目录结构" class="headerlink" title="2 U-Boot主要目录结构"></a>2 U-Boot主要目录结构</h3><ul>
+<li>board 目标板相关文件，主要包含SDRAM、FLASH驱动；</li>
+<li>common 独立于处理器体系结构的通用代码，如内存大小探测与故障检测； </li>
+<li>cpu 与处理器相关的文件。如mpc8xx子目录下含串口、网口、LCD驱动及中断初始化等文件； </li>
+<li>driver 通用设备驱动，如CFI FLASH驱动（目前对INTEL FLASH支持较好）</li>
+<li>doc U-Boot的说明文档；</li>
+<li>examples可在U-Boot下运行的示例程序；如hello_world.c,timer.c；</li>
+<li>include U-Boot头文件；尤其configs子目录下与目标板相关的配置头文件是移植过程中经常要修改的文件；</li>
+<li>lib_xxx 处理器体系相关的文件，如lib_ppc, lib_arm目录分别包含与PowerPC、ARM体系结构相关的文件； </li>
+<li>net 与网络功能相关的文件目录，如bootp,nfs,tftp；</li>
+<li>post 上电自检文件目录。尚有待于进一步完善； </li>
+<li>rtc RTC驱动程序；</li>
+<li>tools 用于创建U-Boot S-RECORD和BIN镜像文件的工具；</li>
+</ul>
+<h3 id="3-U-Boot支持的主要功能"><a href="#3-U-Boot支持的主要功能" class="headerlink" title="3 U-Boot支持的主要功能"></a>3 U-Boot支持的主要功能</h3><ul>
+<li>系统引导 支持NFS挂载、RAMDISK（压缩或非压缩）形式的根文件系统  支持NFS挂载、从FLASH中引导压缩或非压缩系统内核；</li>
+<li>基本辅助功能 强大的操作系统接口功能；可灵活设置、传递多个关键参数给操作系统，适合系统在不同开发阶段的调试要求与产品发布，尤对Linux支持最为强劲； </li>
+<li>支持目标板环境参数多种存储方式，如FLASH、NVRAM、EEPROM； CRC32校验，可校验FLASH中内核、RAMDISK镜像文件是否完好； </li>
+<li>设备驱动 串口、SDRAM、FLASH、以太网、LCD、NVRAM、EEPROM、键盘、USB、PCMCIA、PCI、RTC等驱动支持； </li>
+<li>上电自检功能 SDRAM、FLASH大小自动检测；SDRAM故障检测；CPU型号； </li>
+<li>特殊功能 XIP内核引导； </li>
+</ul>
+]]></content>
+      <tags>
+        <tag>-系统移植</tag>
       </tags>
   </entry>
 </search>
