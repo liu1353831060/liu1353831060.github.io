@@ -6,7 +6,7 @@
   <link href="https://liu1353831060.github.io/atom.xml" rel="self"/>
   
   <link href="https://liu1353831060.github.io/"/>
-  <updated>2021-01-08T06:43:49.071Z</updated>
+  <updated>2021-01-09T07:14:54.446Z</updated>
   <id>https://liu1353831060.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mini_linux制作</title>
+    <link href="https://liu1353831060.github.io/2021/01/09/mini-linux/"/>
+    <id>https://liu1353831060.github.io/2021/01/09/mini-linux/</id>
+    <published>2021-01-09T05:24:46.000Z</published>
+    <updated>2021-01-09T07:14:54.446Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ul><li>linux系统（建议虚拟机；本人ubuntu12.04）</li><li>开发平台（本人用了迅为的iTOP-4412精英版）</li><li>busybox（百度网盘链接：<a href="https://pan.baidu.com/s/1iqF2PDji-WMCb_6ojRuVug">https://pan.baidu.com/s/1iqF2PDji-WMCb_6ojRuVug</a>  提取码：yafx ）（官网：<a href="https://busybox.net/）">https://busybox.net/）</a></li><li><p>arm-linux-gcc编译器</p><a id="more"></a><h3 id="一、busybox的安装和配置"><a href="#一、busybox的安装和配置" class="headerlink" title="一、busybox的安装和配置"></a>一、busybox的安装和配置</h3></li><li><p>拷贝busybox安装包至新建的/home/minilinux文件夹下面，进行解压</p></li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo tar -xvf busybox-1.21.1.tar.bz2 </span><br></pre></td></tr></table></figure><ul><li>进入busybox-1.22.1文件夹下</li></ul><p><img src="/imge/mini_linux\1.jpg" alt="1"></p><ul><li><p>配置make menuconfig</p><p>• 配置编译器<br>– 进入界面“Busybox Settings”→“Build Optiions”→“Cross Compiler prefix”将其配置为“arm-none-linux-gnueabi-”<br>– 返回到“Build Optiions”</p><p><img src="/imge/mini_linux\2.jpg" alt="2"></p><p>• 配置二进制文件安装目录<br>– 进入界面“Installation Options”→“BusyBox installation prefix”将其配置为<br>“../system”</p><p><img src="/imge/mini_linux\3.jpg" alt="3"></p><p>– 保存退出</p></li><li><p>编译和安装busybox</p><p>• 使用命令make，编译Busybox<br>• 使用命令make install，安装二进制文件到“../system”目录中</p></li></ul><p><img src="/imge/mini_linux\4.jpg" alt="4"></p><h3 id="二、完善最小文件系统"><a href="#二、完善最小文件系统" class="headerlink" title="二、完善最小文件系统"></a>二、完善最小文件系统</h3><ul><li><p>进入system目录完善最小系统<br>– 创建文件夹mkdir dev etc lib mnt proc sys tmp var</p><p><img src="/imge/mini_linux\5.jpg" alt="5"></p></li><li><p>进入新创建的etc目录<br>– 创建文件夹mkdir init.d rc.d</p></li><li><p>进入新创建的rc.d文件夹<br>– 创建文件夹mkdir init.d</p></li><li><p>返回到system目录，进入var目录<br>– 新建目录mkdir lib lock log run tmp</p></li><li><p>进入创建的etc目录<br>– 将eth0-setting passwd profile三个文件拷贝进去，将文件的权限改为755</p></li><li><p>进入etc目录下的init.d目录<br>– 将ifconfig-eth0和rcS两个文件拷贝进去，将文件的权限改为755</p></li><li><p>进入etc/rc.d/init.d目录<br>– 将netd文件拷贝进去，将文件的权限改为755</p></li><li><p>返回到system目录下，进入lib文件夹下<br>– 将编译器的库文件拷贝进去<br>– “cp /usr/local/arm/arm-2009q3/arm-none-linux-gnueabi/libc/lib/* ./“</p></li></ul><h3 id="三、安装打包软件"><a href="#三、安装打包软件" class="headerlink" title="三、安装打包软件"></a>三、安装打包软件</h3><ul><li>打包工具使用make_ext4fs<br>– 工具在光盘“tools”目录下的“linux_tools.tgz”压缩文件<br>– 将工具拷贝到“/”目录下，并解压</li></ul><p><img src="/imge/mini_linux\6.jpg" alt="6"></p>]]></content>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;linux系统（建议虚拟机；本人ubuntu12.04）&lt;/li&gt;
+&lt;li&gt;开发平台（本人用了迅为的iTOP-4412精英版）&lt;/li&gt;
+&lt;li&gt;busybox（百度网盘链接：&lt;a href=&quot;https://pan.baidu.com/s/1iqF2PDji-WMCb_6ojRuVug&quot;&gt;https://pan.baidu.com/s/1iqF2PDji-WMCb_6ojRuVug&lt;/a&gt;  提取码：yafx ）（官网：&lt;a href=&quot;https://busybox.net/）&quot;&gt;https://busybox.net/）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;arm-linux-gcc编译器&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="linux系统编程" scheme="https://liu1353831060.github.io/tags/linux%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>u-boot学习笔记</title>
@@ -32,30 +55,6 @@
     
     
     <category term="-系统移植" scheme="https://liu1353831060.github.io/tags/%E7%B3%BB%E7%BB%9F%E7%A7%BB%E6%A4%8D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>张宇36讲</title>
-    <link href="https://liu1353831060.github.io/2020/12/25/%E5%BC%A0%E5%AE%8736%E8%AE%B2/"/>
-    <id>https://liu1353831060.github.io/2020/12/25/%E5%BC%A0%E5%AE%8736%E8%AE%B2/</id>
-    <published>2020-12-25T07:17:40.000Z</published>
-    <updated>2020-12-25T10:18:25.533Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="第二讲-极限和连续"><a href="#第二讲-极限和连续" class="headerlink" title="第二讲:极限和连续"></a>第二讲:极限和连续</h3><h4 id="1、数列极限的定义"><a href="#1、数列极限的定义" class="headerlink" title="1、数列极限的定义"></a>1、数列极限的定义</h4><p>对于$\forall \epsilon &gt;0$,总$\exists N(n\epsilon N_+)$,使得当$n&gt;N$时，$|x_n-a|&lt;\epsilon$恒成立，则称数a时数列{$x_n$}的极限，或者称数列{$x_n$}收敛于a，记为</p><script type="math/tex; mode=display">\displaystyle \lim_{n \to \infty}x_n=a</script><p>如果不存在这样的数a，就说明数列是发散的。</p><h4 id="2、数列极限收敛的充要条件"><a href="#2、数列极限收敛的充要条件" class="headerlink" title="2、数列极限收敛的充要条件"></a>2、数列极限收敛的充要条件</h4><p>定义    从数列{$a_n$}:$a_1,a_2,a_3,…$中选取无穷多项，并按原来的先后顺序组成新的数列，称新数列为原数列的子列，记为</p><script type="math/tex; mode=display">{a_n}:a_{n_1},a_{n_2},...,a_{n_k},...</script><p>其中下标$n_1,n_2,…,n_k,…$为正整数，且满足$n_1&lt;n_2&lt;…&lt;n_k&lt;…$.</p><p>若{$a_{n_k}$}是{$a_n$}的子列，则$a_{n_k}$是新数列的第k项，是原数列的第$n_k$项，因此，有$n_k \ge k$()</p><p>[例2]设$\displaystyle \lim_{x \to \infty}(a_n + b_n)=1 $,$\displaystyle \lim_{n \to \infty}(a_n-b_n)=3$,证明{$a_n$}和{$b_n$}的极限存在,并求出它们的极限值.</p><p>$a_{n_k}$</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="考研数学&lt;一&gt;" scheme="https://liu1353831060.github.io/categories/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6-%E4%B8%80/"/>
-    
-    
-    <category term="考研数学&lt;一&gt;" scheme="https://liu1353831060.github.io/tags/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6-%E4%B8%80/"/>
     
   </entry>
   
@@ -84,13 +83,37 @@
   </entry>
   
   <entry>
+    <title>张宇36讲</title>
+    <link href="https://liu1353831060.github.io/2020/12/25/%E5%BC%A0%E5%AE%8736%E8%AE%B2/"/>
+    <id>https://liu1353831060.github.io/2020/12/25/%E5%BC%A0%E5%AE%8736%E8%AE%B2/</id>
+    <published>2020-12-25T07:17:40.000Z</published>
+    <updated>2020-12-25T10:18:25.533Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="第二讲-极限和连续"><a href="#第二讲-极限和连续" class="headerlink" title="第二讲:极限和连续"></a>第二讲:极限和连续</h3><h4 id="1、数列极限的定义"><a href="#1、数列极限的定义" class="headerlink" title="1、数列极限的定义"></a>1、数列极限的定义</h4><p>对于$\forall \epsilon &gt;0$,总$\exists N(n\epsilon N_+)$,使得当$n&gt;N$时，$|x_n-a|&lt;\epsilon$恒成立，则称数a时数列{$x_n$}的极限，或者称数列{$x_n$}收敛于a，记为</p><script type="math/tex; mode=display">\displaystyle \lim_{n \to \infty}x_n=a</script><p>如果不存在这样的数a，就说明数列是发散的。</p><h4 id="2、数列极限收敛的充要条件"><a href="#2、数列极限收敛的充要条件" class="headerlink" title="2、数列极限收敛的充要条件"></a>2、数列极限收敛的充要条件</h4><p>定义    从数列{$a_n$}:$a_1,a_2,a_3,…$中选取无穷多项，并按原来的先后顺序组成新的数列，称新数列为原数列的子列，记为</p><script type="math/tex; mode=display">{a_n}:a_{n_1},a_{n_2},...,a_{n_k},...</script><p>其中下标$n_1,n_2,…,n_k,…$为正整数，且满足$n_1&lt;n_2&lt;…&lt;n_k&lt;…$.</p><p>若{$a_{n_k}$}是{$a_n$}的子列，则$a_{n_k}$是新数列的第k项，是原数列的第$n_k$项，因此，有$n_k \ge k$()</p><p>[例2]设$\displaystyle \lim_{x \to \infty}(a_n + b_n)=1 $,$\displaystyle \lim_{n \to \infty}(a_n-b_n)=3$,证明{$a_n$}和{$b_n$}的极限存在,并求出它们的极限值.</p><p>$a_{n_k}$</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="考研数学&lt;一&gt;" scheme="https://liu1353831060.github.io/categories/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6-%E4%B8%80/"/>
+    
+    
+    <category term="考研数学&lt;一&gt;" scheme="https://liu1353831060.github.io/tags/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6-%E4%B8%80/"/>
+    
+  </entry>
+  
+  <entry>
     <title>HEXO博客搭建教程</title>
     <link href="https://liu1353831060.github.io/2020/12/14/HEXO%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
     <id>https://liu1353831060.github.io/2020/12/14/HEXO%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</id>
     <published>2020-12-14T06:42:18.000Z</published>
     <updated>2020-12-25T07:12:38.138Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="图像插入"><a href="#图像插入" class="headerlink" title="图像插入"></a>图像插入</h2><p><img src="/imge/timg.jpg" alt="RUNOOB 图标"></p><a id="more"></a><h2 id="文字处理"><a href="#文字处理" class="headerlink" title="文字处理"></a>文字处理</h2><h2 id="音频插入"><a href="#音频插入" class="headerlink" title="音频插入"></a>音频插入</h2>    <div id="aplayer-aFLliiPG" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="571184509" data-server="xiami" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><h2 id="视频插入"><a href="#视频插入" class="headerlink" title="视频插入"></a>视频插入</h2><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"autoplay":true,"hotkey":true,"preload":"metadata","video":{"url":"http://www.nenu.edu.cn/_upload/article/videos/03/5f/7c999eed42e3aadc413d7f851f0e/0f50b3eb-9285-41d2-ac4d-6cc363651aad_B.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script> ]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="图像插入"><a href="#图像插入" class="headerlink" title="图像插入"></a>图像插入</h2><p><img src="/imge/timg.jpg" alt="RUNOOB 图标"></p><a id="more"></a><h2 id="文字处理"><a href="#文字处理" class="headerlink" title="文字处理"></a>文字处理</h2><h2 id="音频插入"><a href="#音频插入" class="headerlink" title="音频插入"></a>音频插入</h2>    <div id="aplayer-NcWJiSOP" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="571184509" data-server="xiami" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><h2 id="视频插入"><a href="#视频插入" class="headerlink" title="视频插入"></a>视频插入</h2><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"autoplay":true,"hotkey":true,"preload":"metadata","video":{"url":"http://www.nenu.edu.cn/_upload/article/videos/03/5f/7c999eed42e3aadc413d7f851f0e/0f50b3eb-9285-41d2-ac4d-6cc363651aad_B.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script> ]]></content>
     
     
     <summary type="html">&lt;h2 id=&quot;图像插入&quot;&gt;&lt;a href=&quot;#图像插入&quot; class=&quot;headerlink&quot; title=&quot;图像插入&quot;&gt;&lt;/a&gt;图像插入&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/imge/timg.jpg&quot; alt=&quot;RUNOOB 图标&quot;&gt;&lt;/p&gt;</summary>

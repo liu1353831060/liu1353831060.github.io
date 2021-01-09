@@ -22,15 +22,27 @@
     var CONFIG = {"hostname":"liu1353831060.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":"1\\","unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="文豪君的个人站">
-<meta property="og:url" content="https://liu1353831060.github.io/tags/Markdown/index.html">
+  <meta name="description" content="准备工作 linux系统（建议虚拟机；本人ubuntu12.04） 开发平台（本人用了迅为的iTOP-4412精英版） busybox（百度网盘链接：https:&#x2F;&#x2F;pan.baidu.com&#x2F;s&#x2F;1iqF2PDji-WMCb_6ojRuVug  提取码：yafx ）（官网：https:&#x2F;&#x2F;busybox.net&#x2F;） arm-linux-gcc编译器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mini_linux制作">
+<meta property="og:url" content="https://liu1353831060.github.io/2021/01/09/mini-linux/index.html">
 <meta property="og:site_name" content="文豪君的个人站">
+<meta property="og:description" content="准备工作 linux系统（建议虚拟机；本人ubuntu12.04） 开发平台（本人用了迅为的iTOP-4412精英版） busybox（百度网盘链接：https:&#x2F;&#x2F;pan.baidu.com&#x2F;s&#x2F;1iqF2PDji-WMCb_6ojRuVug  提取码：yafx ）（官网：https:&#x2F;&#x2F;busybox.net&#x2F;） arm-linux-gcc编译器">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://liu1353831060.github.io/imge/mini_linux/1.jpg">
+<meta property="og:image" content="https://liu1353831060.github.io/imge/mini_linux/2.jpg">
+<meta property="og:image" content="https://liu1353831060.github.io/imge/mini_linux/3.jpg">
+<meta property="og:image" content="https://liu1353831060.github.io/imge/mini_linux/4.jpg">
+<meta property="og:image" content="https://liu1353831060.github.io/imge/mini_linux/5.jpg">
+<meta property="og:image" content="https://liu1353831060.github.io/imge/mini_linux/6.jpg">
+<meta property="article:published_time" content="2021-01-09T05:24:46.000Z">
+<meta property="article:modified_time" content="2021-01-09T07:14:54.446Z">
 <meta property="article:author" content="Liuwenhao">
+<meta property="article:tag" content="linux系统编程">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://liu1353831060.github.io/imge/mini_linux/1.jpg">
 
-<link rel="canonical" href="https://liu1353831060.github.io/tags/Markdown/">
+<link rel="canonical" href="https://liu1353831060.github.io/2021/01/09/mini-linux/">
 
 
 <script id="page-configurations">
@@ -38,12 +50,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>标签: Markdown | 文豪君的个人站</title>
+  <title>mini_linux制作 | 文豪君的个人站</title>
   
 
 
@@ -191,51 +203,159 @@
         <div class="content-wrap">
           
 
-          <div class="content tag">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">Markdown
-          <small>标签</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://liu1353831060.github.io/2021/01/09/mini-linux/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/myavatar.gif">
+      <meta itemprop="name" content="Liuwenhao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="文豪君的个人站">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          mini_linux制作
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-01-09 13:24:46 / 修改时间：15:14:54" itemprop="dateCreated datePublished" datetime="2021-01-09T13:24:46+08:00">2021-01-09</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
+        <h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ul>
+<li>linux系统（建议虚拟机；本人ubuntu12.04）</li>
+<li>开发平台（本人用了迅为的iTOP-4412精英版）</li>
+<li>busybox（百度网盘链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1iqF2PDji-WMCb_6ojRuVug">https://pan.baidu.com/s/1iqF2PDji-WMCb_6ojRuVug</a>  提取码：yafx ）（官网：<a target="_blank" rel="noopener" href="https://busybox.net/）">https://busybox.net/）</a></li>
+<li><p>arm-linux-gcc编译器</p>
+<a id="more"></a>
+<h3 id="一、busybox的安装和配置"><a href="#一、busybox的安装和配置" class="headerlink" title="一、busybox的安装和配置"></a>一、busybox的安装和配置</h3></li>
+<li><p>拷贝busybox安装包至新建的/home/minilinux文件夹下面，进行解压</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo tar -xvf busybox-1.21.1.tar.bz2 </span><br></pre></td></tr></table></figure>
+<ul>
+<li>进入busybox-1.22.1文件夹下</li>
+</ul>
+<p><img src="/imge/mini_linux\1.jpg" alt="1"></p>
+<ul>
+<li><p>配置make menuconfig</p>
+<p>• 配置编译器<br>– 进入界面“Busybox Settings”→“Build Optiions”→“Cross Compiler prefix”将其配置为“arm-none-linux-gnueabi-”<br>– 返回到“Build Optiions”</p>
+<p><img src="/imge/mini_linux\2.jpg" alt="2"></p>
+<p>• 配置二进制文件安装目录<br>– 进入界面“Installation Options”→“BusyBox installation prefix”将其配置为<br>“../system”</p>
+<p><img src="/imge/mini_linux\3.jpg" alt="3"></p>
+<p>– 保存退出</p>
+</li>
+<li><p>编译和安装busybox</p>
+<p>• 使用命令make，编译Busybox<br>• 使用命令make install，安装二进制文件到“../system”目录中</p>
+</li>
+</ul>
+<p><img src="/imge/mini_linux\4.jpg" alt="4"></p>
+<h3 id="二、完善最小文件系统"><a href="#二、完善最小文件系统" class="headerlink" title="二、完善最小文件系统"></a>二、完善最小文件系统</h3><ul>
+<li><p>进入system目录完善最小系统<br>– 创建文件夹mkdir dev etc lib mnt proc sys tmp var</p>
+<p><img src="/imge/mini_linux\5.jpg" alt="5"></p>
+</li>
+<li><p>进入新创建的etc目录<br>– 创建文件夹mkdir init.d rc.d</p>
+</li>
+<li><p>进入新创建的rc.d文件夹<br>– 创建文件夹mkdir init.d</p>
+</li>
+<li><p>返回到system目录，进入var目录<br>– 新建目录mkdir lib lock log run tmp</p>
+</li>
+<li><p>进入创建的etc目录<br>– 将eth0-setting passwd profile三个文件拷贝进去，将文件的权限改为755</p>
+</li>
+<li><p>进入etc目录下的init.d目录<br>– 将ifconfig-eth0和rcS两个文件拷贝进去，将文件的权限改为755</p>
+</li>
+<li><p>进入etc/rc.d/init.d目录<br>– 将netd文件拷贝进去，将文件的权限改为755</p>
+</li>
+<li><p>返回到system目录下，进入lib文件夹下<br>– 将编译器的库文件拷贝进去<br>– “cp /usr/local/arm/arm-2009q3/arm-none-linux-gnueabi/libc/lib/* ./“</p>
+</li>
+</ul>
+<h3 id="三、安装打包软件"><a href="#三、安装打包软件" class="headerlink" title="三、安装打包软件"></a>三、安装打包软件</h3><ul>
+<li>打包工具使用make_ext4fs<br>– 工具在光盘“tools”目录下的“linux_tools.tgz”压缩文件<br>– 将工具拷贝到“/”目录下，并解压</li>
+</ul>
+<p><img src="/imge/mini_linux\6.jpg" alt="6"></p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-12-14T14:42:18+08:00"
-              content="2020-12-14">
-          12-14
-        </time>
+    
+    
+    
+        <div class="reward-container">
+  <div>做的不错，给爷看赏！</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="Liuwenhao 微信支付">
+        <p>微信支付</p>
       </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/12/14/HEXO%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" itemprop="url">
-            <span itemprop="name">HEXO博客搭建教程</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-    </div>
   </div>
-  
-  
-  
+</div>
 
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/linux%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/" rel="tag"># linux系统编程</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/01/08/u-boot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="prev" title="u-boot学习笔记">
+      <i class="fa fa-chevron-left"></i> u-boot学习笔记
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
@@ -288,6 +408,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81busybox%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">一、busybox的安装和配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%AE%8C%E5%96%84%E6%9C%80%E5%B0%8F%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="nav-number">3.</span> <span class="nav-text">二、完善最小文件系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%AE%89%E8%A3%85%E6%89%93%E5%8C%85%E8%BD%AF%E4%BB%B6"><span class="nav-number">4.</span> <span class="nav-text">三、安装打包软件</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

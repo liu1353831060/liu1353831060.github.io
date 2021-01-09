@@ -6,7 +6,7 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="图像插入"><a href="#图像插入" class="headerlink" title="图像插入"></a>图像插入</h2><p><img src="/imge/timg.jpg" alt="RUNOOB 图标"></p>
 <a id="more"></a>
 <h2 id="文字处理"><a href="#文字处理" class="headerlink" title="文字处理"></a>文字处理</h2><h2 id="音频插入"><a href="#音频插入" class="headerlink" title="音频插入"></a>音频插入</h2>
-    <div id="aplayer-aFLliiPG" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-NcWJiSOP" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="571184509" data-server="xiami" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
 <h2 id="视频插入"><a href="#视频插入" class="headerlink" title="视频插入"></a>视频插入</h2><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"autoplay":true,"hotkey":true,"preload":"metadata","video":{"url":"http://www.nenu.edu.cn/_upload/article/videos/03/5f/7c999eed42e3aadc413d7f851f0e/0f50b3eb-9285-41d2-ac4d-6cc363651aad_B.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script> ]]></content>
@@ -16,6 +16,65 @@
       <tags>
         <tag>hexo</tag>
         <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mini_linux制作</title>
+    <url>/2021/01/09/mini-linux/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ul>
+<li>linux系统（建议虚拟机；本人ubuntu12.04）</li>
+<li>开发平台（本人用了迅为的iTOP-4412精英版）</li>
+<li>busybox（百度网盘链接：<a href="https://pan.baidu.com/s/1iqF2PDji-WMCb_6ojRuVug">https://pan.baidu.com/s/1iqF2PDji-WMCb_6ojRuVug</a>  提取码：yafx ）（官网：<a href="https://busybox.net/）">https://busybox.net/）</a></li>
+<li><p>arm-linux-gcc编译器</p>
+<a id="more"></a>
+<h3 id="一、busybox的安装和配置"><a href="#一、busybox的安装和配置" class="headerlink" title="一、busybox的安装和配置"></a>一、busybox的安装和配置</h3></li>
+<li><p>拷贝busybox安装包至新建的/home/minilinux文件夹下面，进行解压</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo tar -xvf busybox-1.21.1.tar.bz2 </span><br></pre></td></tr></table></figure>
+<ul>
+<li>进入busybox-1.22.1文件夹下</li>
+</ul>
+<p><img src="/imge/mini_linux\1.jpg" alt="1"></p>
+<ul>
+<li><p>配置make menuconfig</p>
+<p>• 配置编译器<br>– 进入界面“Busybox Settings”→“Build Optiions”→“Cross Compiler prefix”将其配置为“arm-none-linux-gnueabi-”<br>– 返回到“Build Optiions”</p>
+<p><img src="/imge/mini_linux\2.jpg" alt="2"></p>
+<p>• 配置二进制文件安装目录<br>– 进入界面“Installation Options”→“BusyBox installation prefix”将其配置为<br>“../system”</p>
+<p><img src="/imge/mini_linux\3.jpg" alt="3"></p>
+<p>– 保存退出</p>
+</li>
+<li><p>编译和安装busybox</p>
+<p>• 使用命令make，编译Busybox<br>• 使用命令make install，安装二进制文件到“../system”目录中</p>
+</li>
+</ul>
+<p><img src="/imge/mini_linux\4.jpg" alt="4"></p>
+<h3 id="二、完善最小文件系统"><a href="#二、完善最小文件系统" class="headerlink" title="二、完善最小文件系统"></a>二、完善最小文件系统</h3><ul>
+<li><p>进入system目录完善最小系统<br>– 创建文件夹mkdir dev etc lib mnt proc sys tmp var</p>
+<p><img src="/imge/mini_linux\5.jpg" alt="5"></p>
+</li>
+<li><p>进入新创建的etc目录<br>– 创建文件夹mkdir init.d rc.d</p>
+</li>
+<li><p>进入新创建的rc.d文件夹<br>– 创建文件夹mkdir init.d</p>
+</li>
+<li><p>返回到system目录，进入var目录<br>– 新建目录mkdir lib lock log run tmp</p>
+</li>
+<li><p>进入创建的etc目录<br>– 将eth0-setting passwd profile三个文件拷贝进去，将文件的权限改为755</p>
+</li>
+<li><p>进入etc目录下的init.d目录<br>– 将ifconfig-eth0和rcS两个文件拷贝进去，将文件的权限改为755</p>
+</li>
+<li><p>进入etc/rc.d/init.d目录<br>– 将netd文件拷贝进去，将文件的权限改为755</p>
+</li>
+<li><p>返回到system目录下，进入lib文件夹下<br>– 将编译器的库文件拷贝进去<br>– “cp /usr/local/arm/arm-2009q3/arm-none-linux-gnueabi/libc/lib/* ./“</p>
+</li>
+</ul>
+<h3 id="三、安装打包软件"><a href="#三、安装打包软件" class="headerlink" title="三、安装打包软件"></a>三、安装打包软件</h3><ul>
+<li>打包工具使用make_ext4fs<br>– 工具在光盘“tools”目录下的“linux_tools.tgz”压缩文件<br>– 将工具拷贝到“/”目录下，并解压</li>
+</ul>
+<p><img src="/imge/mini_linux\6.jpg" alt="6"></p>
+]]></content>
+      <tags>
+        <tag>linux系统编程</tag>
       </tags>
   </entry>
   <entry>
@@ -58,6 +117,18 @@
       </tags>
   </entry>
   <entry>
+    <title>博客修改日志</title>
+    <url>/2020/12/25/%E5%8D%9A%E5%AE%A2%E4%BF%AE%E6%94%B9%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="解决hexo不显示latex数学公式问题"><a href="#解决hexo不显示latex数学公式问题" class="headerlink" title="解决hexo不显示latex数学公式问题"></a>解决hexo不显示latex数学公式问题</h3><p><a href="https://blog.csdn.net/weixin_44489823/article/details/105028860">网络方法</a></p>
+<div class="pdfobject-container" data-target="https://www.liuwenhao.club/pdf/20191210103558276.pdf" data-height="500px"></div>]]></content>
+      <categories>
+        <category>修改日志</category>
+      </categories>
+      <tags>
+        <tag>修改日志</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>张宇36讲</title>
     <url>/2020/12/25/%E5%BC%A0%E5%AE%8736%E8%AE%B2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="第二讲-极限和连续"><a href="#第二讲-极限和连续" class="headerlink" title="第二讲:极限和连续"></a>第二讲:极限和连续</h3><h4 id="1、数列极限的定义"><a href="#1、数列极限的定义" class="headerlink" title="1、数列极限的定义"></a>1、数列极限的定义</h4><p>对于$\forall \epsilon &gt;0$,总$\exists N(n\epsilon N_+)$,使得当$n&gt;N$时，$|x_n-a|&lt;\epsilon$恒成立，则称数a时数列{$x_n$}的极限，或者称数列{$x_n$}收敛于a，记为</p>
@@ -75,18 +146,6 @@
       </categories>
       <tags>
         <tag>考研数学&lt;一&gt;</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客修改日志</title>
-    <url>/2020/12/25/%E5%8D%9A%E5%AE%A2%E4%BF%AE%E6%94%B9%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="解决hexo不显示latex数学公式问题"><a href="#解决hexo不显示latex数学公式问题" class="headerlink" title="解决hexo不显示latex数学公式问题"></a>解决hexo不显示latex数学公式问题</h3><p><a href="https://blog.csdn.net/weixin_44489823/article/details/105028860">网络方法</a></p>
-<div class="pdfobject-container" data-target="https://www.liuwenhao.club/pdf/20191210103558276.pdf" data-height="500px"></div>]]></content>
-      <categories>
-        <category>修改日志</category>
-      </categories>
-      <tags>
-        <tag>修改日志</tag>
       </tags>
   </entry>
 </search>
